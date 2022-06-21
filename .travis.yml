@@ -2,6 +2,7 @@ language: python
 python:
 - "3.9.6"
 install:
- - pip3 install flask
+ - pip install flask
+build: off
 script:
- - python3 ./flaskapp/some_app.py 
+ - python ./flaskapp/some_app.py 
