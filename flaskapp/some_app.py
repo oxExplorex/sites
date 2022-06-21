@@ -1,5 +1,6 @@
-from flask import Flask
+# waitress-serve --listen=127.0.0.1:5000 wsgi:app
 from flask import render_template
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -9,7 +10,6 @@ def data_to():
   some_str = 'Hello my dear friends!'
   some_value = 10
   return render_template('simple.html', some_str=some_str, some_value=some_value, some_pars=some_pars)
-
 
 @app.route("/")
 def hello():
